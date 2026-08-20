@@ -1,0 +1,2607 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Zeidy Nicol Sánchez Portillo | Portafolio Profesional
+    </title>
+
+    <style>
+
+        /* =====================================================
+           CONFIGURACIÓN GENERAL
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #07111f;
+            color: white;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* =====================================================
+           NAVEGACIÓN
+        ===================================================== */
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+
+            background: rgba(7, 17, 31, 0.96);
+
+            border-bottom: 1px solid #24344d;
+
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            min-height: 75px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            gap: 25px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #d4af37;
+        }
+
+        .menu {
+            display: flex;
+            gap: 26px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .menu a {
+            font-size: 14px;
+            color: #d9e2ef;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+
+        .menu a:hover {
+            color: #d4af37;
+        }
+
+        .boton-cv {
+            padding: 12px 20px;
+
+            border: 1px solid #d4af37;
+            border-radius: 8px;
+
+            color: #d4af37;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+
+            white-space: nowrap;
+        }
+
+        .boton-cv:hover {
+            background: #d4af37;
+            color: #07111f;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           INICIO
+        ===================================================== */
+
+        #inicio {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+
+            padding-top: 110px;
+
+            background:
+                radial-gradient(
+                    circle at 80% 35%,
+                    #173b7a 0%,
+                    transparent 35%
+                ),
+                radial-gradient(
+                    circle at 15% 80%,
+                    #10264b 0%,
+                    transparent 30%
+                ),
+                #07111f;
+        }
+
+        .inicio-contenido {
+            display: grid;
+
+            grid-template-columns: 1fr 380px;
+
+            align-items: center;
+
+            gap: 70px;
+        }
+
+        .saludo {
+            color: #d4af37;
+
+            font-weight: bold;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 12px;
+        }
+
+        .inicio h1 {
+            font-size: 58px;
+
+            line-height: 1.05;
+
+            margin-bottom: 20px;
+        }
+
+        .inicio h1 span {
+            color: #d4af37;
+
+            display: block;
+        }
+
+        .subtitulo {
+            color: #5da0ff;
+
+            font-size: 21px;
+
+            margin-bottom: 20px;
+
+            font-weight: bold;
+        }
+
+        .descripcion {
+            color: #b9c4d4;
+
+            max-width: 650px;
+
+            margin-bottom: 30px;
+
+            font-size: 16px;
+        }
+
+        .botones {
+            display: flex;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+        }
+
+        .boton {
+            padding: 13px 22px;
+
+            border-radius: 8px;
+
+            font-weight: bold;
+
+            display: inline-block;
+
+            transition: 0.3s;
+        }
+
+        .boton-principal {
+            background: #d4af37;
+
+            color: #07111f;
+        }
+
+        .boton-principal:hover {
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 10px 25px rgba(212,175,55,0.25);
+        }
+
+        .boton-secundario {
+            border: 1px solid #5da0ff;
+
+            color: #5da0ff;
+        }
+
+        .boton-secundario:hover {
+            background: #5da0ff;
+
+            color: white;
+        }
+
+
+        /* =====================================================
+           FOTO PRINCIPAL
+        ===================================================== */
+
+        .foto-portafolio {
+            width: 280px;
+            height: 350px;
+
+            margin: auto;
+
+            overflow: hidden;
+
+            border: 2px solid #d4af37;
+
+            border-radius: 22px;
+
+            background: #10254a;
+
+            box-shadow:
+                0 0 40px rgba(45,111,255,0.22),
+                0 0 15px rgba(212,175,55,0.10);
+        }
+
+        .foto-portafolio img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            object-position: center;
+        }
+
+
+        /* =====================================================
+           SECCIONES
+        ===================================================== */
+
+        section {
+            padding: 95px 0;
+        }
+
+        .titulo-seccion {
+            margin-bottom: 45px;
+        }
+
+        .titulo-seccion small {
+            color: #d4af37;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+        }
+
+        .titulo-seccion h2 {
+            font-size: 38px;
+
+            margin-top: 8px;
+        }
+
+        .titulo-seccion p {
+            color: #9eabbc;
+
+            max-width: 750px;
+
+            margin-top: 10px;
+        }
+
+
+        /* =====================================================
+           SOBRE MÍ
+        ===================================================== */
+
+        .sobre-mi {
+            background: #091525;
+        }
+
+        .sobre-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 50px;
+
+            align-items: center;
+        }
+
+        .sobre-texto p {
+            color: #b9c4d4;
+
+            margin-bottom: 20px;
+        }
+
+        .estadisticas {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 15px;
+        }
+
+        .estadistica {
+            background: #101f34;
+
+            border: 1px solid #24344d;
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            transition: 0.3s;
+        }
+
+        .estadistica:hover {
+            transform: translateY(-4px);
+
+            border-color: #d4af37;
+        }
+
+        .estadistica h3 {
+            color: #d4af37;
+
+            font-size: 26px;
+        }
+
+        .estadistica p {
+            color: #b9c4d4;
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           HABILIDADES
+        ===================================================== */
+
+        .habilidades {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .habilidad {
+            background: #0d1b2e;
+
+            border: 1px solid #24344d;
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            transition: 0.3s;
+        }
+
+        .habilidad:hover {
+            transform: translateY(-6px);
+
+            border-color: #d4af37;
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .icono {
+            font-size: 35px;
+
+            margin-bottom: 15px;
+        }
+
+        .habilidad h3 {
+            margin-bottom: 10px;
+        }
+
+        .habilidad p {
+            color: #9eabbc;
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================================
+           CERTIFICACIONES
+        ===================================================== */
+
+        .certificaciones {
+            background: #091525;
+        }
+
+        .certificados {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .certificado {
+            background: #101f34;
+
+            border: 1px solid #24344d;
+
+            padding: 18px;
+
+            border-radius: 14px;
+
+            overflow: hidden;
+
+            transition: 0.3s;
+        }
+
+        .certificado:hover {
+            border-color: #d4af37;
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 35px rgba(0,0,0,0.25);
+        }
+
+        .certificado-imagen {
+            width: 100%;
+
+            height: 330px;
+
+            background: #17273d;
+
+            border-radius: 9px;
+
+            overflow: hidden;
+
+            position: relative;
+        }
+
+        /*
+           Vista previa real del PDF
+        */
+
+        .certificado-imagen iframe {
+            width: 100%;
+            height: 100%;
+
+            border: none;
+
+            background: white;
+        }
+
+        .certificado h3 {
+            margin-top: 18px;
+
+            color: white;
+
+            font-size: 18px;
+        }
+
+        .certificado p {
+            color: #9eabbc;
+
+            margin-top: 6px;
+
+            font-size: 14px;
+        }
+
+        .etiqueta {
+            display: inline-block;
+
+            margin-top: 12px;
+
+            padding: 5px 11px;
+
+            border: 1px solid #5da0ff;
+
+            border-radius: 20px;
+
+            color: #5da0ff;
+
+            font-size: 11px;
+
+            font-weight: bold;
+        }
+
+        .boton-certificado {
+            display: inline-block;
+
+            margin-top: 12px;
+
+            color: #d4af37;
+
+            border: 1px solid #d4af37;
+
+            padding: 7px 12px;
+
+            border-radius: 6px;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .boton-certificado:hover {
+            background: #d4af37;
+
+            color: #07111f;
+        }
+
+
+        /* =====================================================
+           EXPERIENCIA
+        ===================================================== */
+
+        .experiencia {
+            background:
+                linear-gradient(
+                    90deg,
+                    #07111f,
+                    #0b1b30
+                );
+        }
+
+        .experiencia-card {
+            display: grid;
+
+            grid-template-columns:
+                180px 1fr;
+
+            gap: 30px;
+
+            background: #101f34;
+
+            border: 1px solid #24344d;
+
+            padding: 30px;
+
+            border-radius: 15px;
+        }
+
+        .logo-empresa {
+            height: 150px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #102c5a,
+                    #17213d
+                );
+
+            border-radius: 10px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            color: #d4af37;
+
+            font-weight: bold;
+
+            font-size: 20px;
+
+            border: 1px solid #30445f;
+        }
+
+        .logo-empresa img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 8px;
+            border-radius: 10px;
+        }
+
+        .experiencia-card h3 {
+            font-size: 26px;
+        }
+
+        .fecha {
+            color: #5da0ff;
+
+            margin: 8px 0 15px;
+        }
+
+        .experiencia-card p {
+            color: #b9c4d4;
+        }
+
+        .lista {
+            margin-top: 15px;
+
+            padding-left: 20px;
+
+            color: #aeb9c8;
+        }
+
+        .lista li {
+            margin-bottom: 7px;
+        }
+
+
+        /* =====================================================
+           PROYECTOS
+        ===================================================== */
+
+        .proyectos {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .proyecto {
+            background: #0d1b2e;
+
+            border: 1px solid #24344d;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+            transition: 0.3s;
+
+            cursor: pointer;
+        }
+
+        .proyecto:hover {
+            transform: translateY(-6px);
+
+            border-color: #d4af37;
+
+            box-shadow:
+                0 15px 35px rgba(0,0,0,0.25);
+        }
+
+        .proyecto-imagen {
+            height: 240px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #102c5a,
+                    #17213d
+                );
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            overflow: hidden;
+        }
+
+        .proyecto-imagen img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: 0.4s;
+        }
+
+        .proyecto:hover
+        .proyecto-imagen img {
+            transform: scale(1.05);
+        }
+
+        /* Vista previa de las páginas web */
+        .proyecto-preview {
+            height: 240px;
+            background: white;
+            overflow: hidden;
+        }
+
+        .proyecto-preview iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+            pointer-events: none;
+            background: white;
+        }
+
+        .proyecto-contenido {
+            padding: 20px;
+        }
+
+        .proyecto h3 {
+            margin-bottom: 8px;
+
+            color: white;
+        }
+
+        .proyecto p {
+            color: #9eabbc;
+
+            font-size: 14px;
+        }
+
+        .categoria {
+            display: inline-block;
+
+            margin-top: 12px;
+
+            padding: 5px 10px;
+
+            border-radius: 20px;
+
+            border: 1px solid #d4af37;
+
+            color: #d4af37;
+
+            font-size: 11px;
+
+            font-weight: bold;
+        }
+
+
+        /* =====================================================
+           GALERÍA ESTADIO
+        ===================================================== */
+
+        .galeria-estadio {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 5px;
+
+            height: 240px;
+
+            overflow: hidden;
+        }
+
+        .galeria-estadio img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: 0.4s;
+        }
+
+        .proyecto:hover
+        .galeria-estadio img {
+            transform: scale(1.04);
+        }
+
+
+        /* =====================================================
+           MODAL PARA PROYECTOS
+        ===================================================== */
+
+        .modal {
+            position: fixed;
+
+            inset: 0;
+
+            background: rgba(0,0,0,0.92);
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            z-index: 5000;
+
+            padding: 30px;
+        }
+
+        .modal.activo {
+            display: flex;
+        }
+
+        .modal-contenido {
+            max-width: 1100px;
+
+            max-height: 90vh;
+
+            position: relative;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+        .modal-contenido img {
+            max-width: 100%;
+
+            max-height: 85vh;
+
+            object-fit: contain;
+
+            border-radius: 8px;
+
+            box-shadow:
+                0 20px 60px rgba(0,0,0,0.6);
+        }
+
+        .cerrar-modal {
+            position: absolute;
+
+            top: -45px;
+
+            right: 0;
+
+            width: 40px;
+
+            height: 40px;
+
+            border-radius: 50%;
+
+            border: 1px solid #d4af37;
+
+            background: #07111f;
+
+            color: #d4af37;
+
+            font-size: 25px;
+
+            cursor: pointer;
+        }
+
+
+        /* =====================================================
+           CONTACTO
+        ===================================================== */
+
+        .contacto {
+            background: #091525;
+        }
+
+        .contacto-grid {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 40px;
+        }
+
+        .contacto-info {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 15px;
+        }
+
+        .contacto-info,
+        #formulario {
+            background: #101f34;
+            border: 1px solid #24344d;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .contacto-info a,
+        .contacto-info p {
+            color: #b9c4d4;
+
+            transition: 0.3s;
+        }
+
+        .contacto-info a:hover {
+            color: #d4af37;
+        }
+
+        .redes {
+            display: flex;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+
+            margin-top: 10px;
+        }
+
+        .red {
+            border: 1px solid #30445f;
+
+            padding: 9px 14px;
+
+            border-radius: 7px;
+
+            color: #5da0ff;
+
+            transition: 0.3s;
+        }
+
+        .red:hover {
+            border-color: #d4af37;
+
+            color: #d4af37;
+        }
+
+        form {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 15px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+
+            padding: 14px;
+
+            background: #101f34;
+
+            border: 1px solid #30445f;
+
+            border-radius: 7px;
+
+            color: white;
+
+            outline: none;
+
+            font-family: inherit;
+        }
+
+        textarea {
+            min-height: 150px;
+
+            resize: vertical;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #d4af37;
+        }
+
+        button {
+            padding: 14px;
+
+            border: none;
+
+            border-radius: 7px;
+
+            background: #d4af37;
+
+            color: #07111f;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 8px 20px rgba(212,175,55,0.2);
+        }
+
+
+        /* =====================================================
+           PIE DE PÁGINA
+        ===================================================== */
+
+        footer {
+            text-align: center;
+
+            padding: 25px;
+
+            border-top: 1px solid #24344d;
+
+            color: #718096;
+
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 1100px) {
+
+            .menu {
+                gap: 14px;
+            }
+
+            .inicio-contenido {
+                grid-template-columns:
+                    1fr 300px;
+            }
+
+            .inicio h1 {
+                font-size: 48px;
+            }
+
+            .proyectos {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .certificados {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+        @media (max-width: 850px) {
+
+            .menu {
+                display: none;
+            }
+
+            .inicio-contenido,
+            .sobre-grid,
+            .contacto-grid {
+                grid-template-columns: 1fr;
+            }
+
+            #inicio {
+                padding-top: 120px;
+
+                padding-bottom: 80px;
+            }
+
+            .inicio {
+                text-align: center;
+            }
+
+            .inicio h1 {
+                font-size: 42px;
+            }
+
+            .descripcion {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .botones {
+                justify-content: center;
+            }
+
+            .foto-portafolio {
+                width: 260px;
+                height: 325px;
+
+                margin: 20px auto 0;
+            }
+
+            .habilidades {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .certificados {
+                grid-template-columns: 1fr;
+            }
+
+            .experiencia-card {
+                grid-template-columns: 1fr;
+            }
+
+            .logo-empresa {
+                width: 180px;
+
+                margin: auto;
+            }
+        }
+
+
+        @media (max-width: 550px) {
+
+            .contenedor {
+                width: 88%;
+            }
+
+            .habilidades,
+            .proyectos,
+            .estadisticas {
+                grid-template-columns: 1fr;
+            }
+
+            .inicio h1 {
+                font-size: 35px;
+            }
+
+            .subtitulo {
+                font-size: 18px;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+            .foto-portafolio {
+                width: 220px;
+                height: 275px;
+            }
+
+            .proyecto-imagen {
+                height: 220px;
+            }
+
+            .certificado-imagen {
+                height: 300px;
+            }
+
+            .boton-cv {
+                padding: 10px 13px;
+
+                font-size: 12px;
+            }
+
+            .modal {
+                padding: 15px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVEGACIÓN
+    ===================================================== -->
+
+    <header>
+
+        <div class="contenedor">
+
+            <nav>
+
+                <div class="logo">
+                    ZS<span>.</span>
+                </div>
+
+
+                <ul class="menu">
+
+                    <li>
+                        <a href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#sobre-mi">
+                            Sobre mí
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#habilidades">
+                            Habilidades
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#certificaciones">
+                            Certificaciones
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#experiencia">
+                            Experiencia
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#proyectos">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contacto">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!--
+                    ESTE BOTÓN QUEDA COMO DESCARGAR CV.
+
+                    Cuando hagamos tu CV final,
+                    el archivo debe llamarse:
+
+                    cv-zeidy.pdf
+
+                    y colocarse junto a index.html.
+                -->
+
+                <a href="cv-zeidy.pdf"
+                   class="boton-cv"
+                   download>
+
+                    DESCARGAR CV
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         INICIO
+    ===================================================== -->
+
+    <section id="inicio">
+
+        <div class="contenedor">
+
+            <div class="inicio-contenido">
+
+
+                <div class="inicio">
+
+                    <p class="saludo">
+                        ¡HOLA! SOY
+                    </p>
+
+
+                    <h1>
+
+                        ZEIDY NICOL
+
+                        <span>
+                            SÁNCHEZ PORTILLO
+                        </span>
+
+                    </h1>
+
+
+                    <p class="subtitulo">
+
+                        Técnica en Informática
+
+                    </p>
+
+
+                    <p class="descripcion">
+
+                        Me apasiona la tecnología, el aprendizaje
+                        constante y el desarrollo de nuevas habilidades.
+                        Durante mi formación académica y práctica
+                        profesional he adquirido experiencia en
+                        herramientas digitales, soporte informático,
+                        elaboración de documentos, diseño digital,
+                        edición fotográfica y atención al cliente.
+
+                    </p>
+
+
+                    <div class="botones">
+
+                        <a href="#sobre-mi"
+                           class="boton boton-principal">
+
+                            CONOCE MÁS DE MÍ
+
+                        </a>
+
+
+                        <a href="#proyectos"
+                           class="boton boton-secundario">
+
+                            VER MIS PROYECTOS
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOTO PRINCIPAL -->
+
+                <div class="foto-portafolio">
+
+                    <img src="img/zeidy.jpg"
+                         alt="Foto profesional de Zeidy Nicol Sánchez">
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SOBRE MÍ
+    ===================================================== -->
+
+    <section id="sobre-mi"
+             class="sobre-mi">
+
+        <div class="contenedor">
+
+
+            <div class="titulo-seccion">
+
+                <small>
+                    SOBRE MÍ
+                </small>
+
+                <h2>
+                    Mi perfil profesional
+                </h2>
+
+                <p>
+                    Conoce mi formación, experiencia y áreas de interés.
+                </p>
+
+            </div>
+
+
+            <div class="sobre-grid">
+
+
+                <div class="sobre-texto">
+
+                    <p>
+
+                        Soy Zeidy Nicol Sánchez Portillo,
+                        estudiante del Bachillerato Técnico Profesional
+                        en Informática del Instituto Alfonso XIII.
+
+                    </p>
+
+
+                    <p>
+
+                        Mi formación me ha permitido desarrollar
+                        conocimientos en herramientas informáticas,
+                        elaboración y edición de documentos,
+                        diseño digital, mantenimiento de equipos
+                        y atención al cliente.
+
+                    </p>
+
+
+                    <p>
+
+                        También tuve la oportunidad de aplicar
+                        estos conocimientos en un ambiente laboral
+                        real durante mi práctica profesional realizada
+                        en Cyber Robert's, en El Paraíso.
+
+                    </p>
+
+
+                    <p>
+
+                        Me interesa continuar fortaleciendo mis
+                        conocimientos en tecnología, diseño digital,
+                        desarrollo web y herramientas informáticas.
+
+                    </p>
+
+                </div>
+
+
+                <div class="estadisticas">
+
+
+                    <div class="estadistica">
+
+                        <h3>
+                            12.º
+                        </h3>
+
+                        <p>
+                            Año de formación
+                        </p>
+
+                    </div>
+
+
+                    <div class="estadistica">
+
+                        <h3>
+                            INFOP
+                        </h3>
+
+                        <p>
+                            Formación complementaria
+                        </p>
+
+                    </div>
+
+
+                    <div class="estadistica">
+
+                        <h3>
+                            27
+                        </h3>
+
+                        <p>
+                            Días de práctica profesional
+                        </p>
+
+                    </div>
+
+
+                    <div class="estadistica">
+
+                        <h3>
+                            2026
+                        </h3>
+
+                        <p>
+                            Experiencia profesional
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         HABILIDADES
+    ===================================================== -->
+
+    <section id="habilidades">
+
+        <div class="contenedor">
+
+
+            <div class="titulo-seccion">
+
+                <small>
+                    MIS HABILIDADES
+                </small>
+
+                <h2>
+                    Lo que sé hacer
+                </h2>
+
+                <p>
+
+                    Habilidades desarrolladas durante mi formación
+                    académica y práctica profesional.
+
+                </p>
+
+            </div>
+
+
+            <div class="habilidades">
+
+
+                <div class="habilidad">
+
+                    <div class="icono">
+                        💻
+                    </div>
+
+                    <h3>
+                        Herramientas digitales
+                    </h3>
+
+                    <p>
+
+                        Microsoft Word, Excel y PowerPoint,
+                        elaboración y edición de documentos
+                        y presentaciones.
+
+                    </p>
+
+                </div>
+
+
+                <div class="habilidad">
+
+                    <div class="icono">
+                        🖨️
+                    </div>
+
+                    <h3>
+                        Servicios digitales
+                    </h3>
+
+                    <p>
+
+                        Impresión, fotocopiado, escaneo,
+                        laminado y preparación de documentos.
+
+                    </p>
+
+                </div>
+
+
+                <div class="habilidad">
+
+                    <div class="icono">
+                        🛠️
+                    </div>
+
+                    <h3>
+                        Mantenimiento informático
+                    </h3>
+
+                    <p>
+
+                        Mantenimiento preventivo de computadoras
+                        y monitores y participación en reparación
+                        de impresoras.
+
+                    </p>
+
+                </div>
+
+
+                <div class="habilidad">
+
+                    <div class="icono">
+                        📄
+                    </div>
+
+                    <h3>
+                        Gestión documental
+                    </h3>
+
+                    <p>
+
+                        Organización de archivos, edición,
+                        conversión de PDF a Word y preparación
+                        de documentos.
+
+                    </p>
+
+                </div>
+
+
+                <div class="habilidad">
+
+                    <div class="icono">
+                        🎨
+                    </div>
+
+                    <h3>
+                        Diseño digital
+                    </h3>
+
+                    <p>
+
+                        Elaboración y edición de carteles,
+                        invitaciones, infografías, banners,
+                        tarjetas y otros materiales gráficos.
+
+                    </p>
+
+                </div>
+
+
+                <div class="habilidad">
+
+                    <div class="icono">
+                        👩‍💼
+                    </div>
+
+                    <h3>
+                        Atención al cliente
+                    </h3>
+
+                    <p>
+
+                        Atención responsable, comunicación,
+                        organización y apoyo a las necesidades
+                        de los usuarios.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CERTIFICACIONES
+    ===================================================== -->
+
+    <section id="certificaciones"
+             class="certificaciones">
+
+        <div class="contenedor">
+
+
+            <div class="titulo-seccion">
+
+                <small>
+                    CERTIFICACIONES Y RECONOCIMIENTOS
+                </small>
+
+                <h2>
+                    Mi formación y reconocimientos
+                </h2>
+
+                <p>
+
+                    Estos documentos se muestran directamente
+                    en el portafolio mediante vista previa.
+
+                </p>
+
+            </div>
+
+
+            <div class="certificados">
+
+
+                <!-- CERTIFICADO 1 -->
+
+                <div class="certificado">
+
+                    <div class="certificado-imagen">
+
+                        <iframe
+                            src="img/proyectos/certificados/certificado-1.pdf"
+                            title="Vista previa certificado 1">
+                        </iframe>
+
+                    </div>
+
+
+                    <h3>
+                        Certificado de formación
+                    </h3>
+
+                    <p>
+                        Documento de certificación profesional.
+                    </p>
+
+
+                    <span class="etiqueta">
+                        CERTIFICACIÓN
+                    </span>
+
+
+                    <br>
+
+
+                    <a href="img/proyectos/certificados/certificado-1.pdf"
+                       target="_blank"
+                       class="boton-certificado">
+
+                        VER CERTIFICADO COMPLETO
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- CERTIFICADO 2 -->
+
+                <div class="certificado">
+
+                    <div class="certificado-imagen">
+
+                        <iframe
+                            src="img/proyectos/certificados/certificado-2.pdf"
+                            title="Vista previa certificado 2">
+                        </iframe>
+
+                    </div>
+
+
+                    <h3>
+                        Certificado de formación
+                    </h3>
+
+                    <p>
+                        Documento de certificación profesional.
+                    </p>
+
+
+                    <span class="etiqueta">
+                        CERTIFICACIÓN
+                    </span>
+
+
+                    <br>
+
+
+                    <a href="img/proyectos/certificados/certificado-2.pdf"
+                       target="_blank"
+                       class="boton-certificado">
+
+                        VER CERTIFICADO COMPLETO
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- CERTIFICADO 3 -->
+
+                <div class="certificado">
+
+                    <div class="certificado-imagen">
+
+                        <iframe
+                            src="img/proyectos/certificados/certificado-3.pdf"
+                            title="Vista previa certificado 3">
+                        </iframe>
+
+                    </div>
+
+
+                    <h3>
+                        Certificado de formación
+                    </h3>
+
+                    <p>
+                        Documento de certificación profesional.
+                    </p>
+
+
+                    <span class="etiqueta">
+                        CERTIFICACIÓN
+                    </span>
+
+
+                    <br>
+
+
+                    <a href="img/proyectos/certificados/certificado-3.pdf"
+                       target="_blank"
+                       class="boton-certificado">
+
+                        VER CERTIFICADO COMPLETO
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EXPERIENCIA
+    ===================================================== -->
+
+    <section id="experiencia"
+             class="experiencia">
+
+        <div class="contenedor">
+
+
+            <div class="titulo-seccion">
+
+                <small>
+                    EXPERIENCIA
+                </small>
+
+                <h2>
+                    Mi práctica profesional
+                </h2>
+
+            </div>
+
+
+            <div class="experiencia-card">
+
+
+                <div class="logo-empresa">
+
+                    <img
+                        src="img/proyectos/ciber-roberts-logo.jpg"
+                        alt="Logo de Cyber Robert's">
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Práctica Profesional
+                    </h3>
+
+
+                    <p class="fecha">
+
+                        Cyber Robert's ·
+                        El Paraíso, El Paraíso
+
+                        <br>
+
+                        01 de julio —
+                        01 de agosto de 2026
+
+                    </p>
+
+
+                    <p>
+
+                        Durante mi práctica profesional tuve
+                        la oportunidad de aplicar los conocimientos
+                        adquiridos durante mi formación como
+                        Bachiller Técnico Profesional en Informática.
+
+                    </p>
+
+
+                    <ul class="lista">
+
+                        <li>
+                            Elaboración y edición de documentos.
+                        </li>
+
+                        <li>
+                            Uso de Word, Excel y PowerPoint.
+                        </li>
+
+                        <li>
+                            Elaboración de carteles,
+                            invitaciones, infografías y banners.
+                        </li>
+
+                        <li>
+                            Organización y manejo de archivos digitales.
+                        </li>
+
+                        <li>
+                            Mantenimiento de computadoras y monitores.
+                        </li>
+
+                        <li>
+                            Participación en reparación de una impresora.
+                        </li>
+
+                        <li>
+                            Atención al cliente.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROYECTOS
+    ===================================================== -->
+
+    <section id="proyectos">
+
+        <div class="contenedor">
+
+
+            <div class="titulo-seccion">
+
+                <small>
+                    PORTAFOLIO
+                </small>
+
+                <h2>
+                    Proyectos y trabajos realizados
+                </h2>
+
+                <p>
+
+                    Una muestra de mis trabajos de diseño,
+                    edición, proyectos académicos y desarrollo
+                    digital realizados durante mi formación.
+
+                    <br>
+
+                    <strong style="color:#d4af37;">
+                        Haz clic sobre cualquier proyecto para verlo en grande.
+                    </strong>
+
+                </p>
+
+            </div>
+
+
+            <div class="proyectos">
+
+
+
+                <!-- PROYECTO 1 - OMMNIS EVENTOS -->
+
+                <div class="proyecto"
+                     onclick="window.open('https://omnnis-eventos.web.app/', '_blank')">
+
+                    <div class="proyecto-preview">
+
+                        <iframe
+                            src="https://omnnis-eventos.web.app/"
+                            title="Vista previa de OMMNIS EVENTOS"
+                            loading="lazy">
+                        </iframe>
+
+                    </div>
+
+                    <div class="proyecto-contenido">
+
+                        <h3>
+                            OMMNIS EVENTOS
+                        </h3>
+
+                        <p>
+                            Página web desarrollada para una empresa
+                            de organización y servicios para eventos.
+                        </p>
+
+                        <span class="categoria">
+                            DESARROLLO WEB
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROYECTO 2 - AURA SKIN -->
+
+                <div class="proyecto"
+                     onclick="window.open('https://aura-skin-183ec.web.app/', '_blank')">
+
+                    <div class="proyecto-preview">
+
+                        <iframe
+                            src="https://aura-skin-183ec.web.app/"
+                            title="Vista previa de AURA SKIN"
+                            loading="lazy">
+                        </iframe>
+
+                    </div>
+
+                    <div class="proyecto-contenido">
+
+                        <h3>
+                            AURA SKIN
+                        </h3>
+
+                        <p>
+                            Página web enfocada en productos y cuidado de la piel.
+                        </p>
+
+                        <span class="categoria">
+                            DESARROLLO WEB
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROYECTO 3 -->
+
+                <div class="proyecto"
+                     onclick="abrirImagen('img/proyectos/jardin-oriental.jpg')">
+
+                    <div class="proyecto-imagen">
+
+                        <img
+                            src="img/proyectos/jardin-oriental.jpg"
+                            alt="Diseño publicitario Jardín Oriental">
+
+                    </div>
+
+
+                    <div class="proyecto-contenido">
+
+                        <h3>
+                            Jardín Oriental
+                        </h3>
+
+                        <p>
+
+                            Diseño publicitario para restaurante,
+                            incluyendo información de contacto,
+                            ubicación y servicio a domicilio.
+
+                        </p>
+
+                        <span class="categoria">
+                            DISEÑO PUBLICITARIO
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PROYECTO 4 -->
+
+                <div class="proyecto"
+                     onclick="abrirImagen('img/proyectos/afia.jpg')">
+
+                    <div class="proyecto-imagen">
+
+                        <img
+                            src="img/proyectos/afia.jpg"
+                            alt="Diseño de identificación AFIA">
+
+                    </div>
+
+
+                    <div class="proyecto-contenido">
+
+                        <h3>
+                            Identificación AFIA
+                        </h3>
+
+                        <p>
+
+                            Diseño de identificación profesional
+                            desarrollado como proyecto de diseño.
+
+                        </p>
+
+                        <span class="categoria">
+                            DISEÑO DE IDENTIDAD
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PROYECTO 5 -->
+
+                <div class="proyecto"
+                     onclick="abrirImagen('img/proyectos/detective-oportunidades.jpg')">
+
+                    <div class="proyecto-imagen">
+
+                        <img
+                            src="img/proyectos/detective-oportunidades.jpg"
+                            alt="Infografía Detective de Oportunidades">
+
+                    </div>
+
+
+                    <div class="proyecto-contenido">
+
+                        <h3>
+                            Detective de Oportunidades
+                        </h3>
+
+                        <p>
+
+                            Infografía académica sobre análisis
+                            de Cyber Robert's, sus servicios,
+                            fortalezas y oportunidades.
+
+                        </p>
+
+                        <span class="categoria">
+                            PROYECTO ACADÉMICO
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PROYECTO 6 - ESTADIO -->
+
+                <div class="proyecto"
+                     onclick="abrirImagen('img/proyectos/estadio-1.jpg')">
+
+                    <div class="galeria-estadio">
+
+                        <img
+                            src="img/proyectos/estadio-1.jpg"
+                            alt="Edición fotográfica del estadio">
+
+                        <img
+                            src="img/proyectos/estadio-2.jpg"
+                            alt="Segunda edición fotográfica del estadio">
+
+                    </div>
+
+
+                    <div class="proyecto-contenido">
+
+                        <h3>
+                            Edición fotográfica del estadio
+                        </h3>
+
+                        <p>
+
+                            Edición y tratamiento de fotografías
+                            realizadas en el estadio.
+
+                        </p>
+
+                        <span class="categoria">
+                            EDICIÓN FOTOGRÁFICA
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PROYECTO 7 -->
+
+                <div class="proyecto"
+                     onclick="abrirImagen('img/proyectos/invitacion.jpg')">
+
+                    <div class="proyecto-imagen">
+
+                        <img
+                            src="img/proyectos/invitacion.jpg"
+                            alt="Invitación 10 Horas en Su Presencia">
+
+                    </div>
+
+
+                    <div class="proyecto-contenido">
+
+                        <h3>
+                            10 Horas en Su Presencia
+                        </h3>
+
+                        <p>
+
+                            Diseño de invitación para evento,
+                            utilizando composición, tipografía,
+                            colores y elementos gráficos.
+
+                        </p>
+
+                        <span class="categoria">
+                            DISEÑO DE INVITACIÓN
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PROYECTO 8 -->
+
+                <div class="proyecto"
+                     onclick="abrirImagen('img/proyectos/np-gym.jpg')">
+
+                    <div class="proyecto-imagen">
+
+                        <img
+                            src="img/proyectos/np-gym.jpg"
+                            alt="Sistema web NP Gym">
+
+                    </div>
+
+
+                    <div class="proyecto-contenido">
+
+                        <h3>
+                            Sistema web NP Gym
+                        </h3>
+
+                        <p>
+
+                            Diseño de interfaz para un sistema
+                            de gestión de gimnasio, incluyendo
+                            registro de clientes, finanzas y rutinas.
+
+                        </p>
+
+                        <span class="categoria">
+                            DESARROLLO WEB
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTACTO
+    ===================================================== -->
+
+    <section id="contacto"
+             class="contacto">
+
+        <div class="contenedor">
+
+
+            <div class="titulo-seccion">
+
+                <small>
+                    CONTACTO
+                </small>
+
+                <h2>
+                    Hablemos
+                </h2>
+
+                <p>
+
+                    Puedes comunicarte conmigo para conocer
+                    más sobre mi formación, proyectos y trabajo.
+
+                </p>
+
+            </div>
+
+
+            <div class="contacto-grid">
+
+
+                <div class="contacto-info">
+
+
+                    <p>
+
+                        📧
+
+                        <strong>
+                            Correo electrónico
+                        </strong>
+
+                        <br>
+
+                        <a href="mailto:zeidynicosanchez@gmail.com">
+
+                            zeidynicosanchez@gmail.com
+
+                        </a>
+
+                    </p>
+
+
+                    <p>
+
+                        📱
+
+                        <strong>
+                            Teléfono
+                        </strong>
+
+                        <br>
+
+                        <a href="tel:97762285">
+
+                            9776-2285
+
+                        </a>
+
+                    </p>
+
+
+                    <p>
+
+                        📍
+
+                        <strong>
+                            Ubicación
+                        </strong>
+
+                        <br>
+
+                        Trojes, El Paraíso, Honduras
+
+                    </p>
+
+
+                    <p>
+
+                        🌐
+
+                        <strong>
+                            Redes sociales
+                        </strong>
+
+                    </p>
+
+
+                    <div class="redes">
+
+
+                        <a
+                            href="https://www.instagram.com/sanznicols_/"
+                            target="_blank"
+                            class="red">
+
+                            Instagram
+
+                        </a>
+
+
+                        <a
+                            href="https://www.tiktok.com/@nicolsanchez2007"
+                            target="_blank"
+                            class="red">
+
+                            TikTok
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <form
+                    id="formulario"
+                    action="https://formsubmit.co/zeidynicosanchez@gmail.com"
+                    method="POST">
+
+
+                    <input
+                        type="text"
+                        name="nombre"
+                        placeholder="Tu nombre completo"
+                        required>
+
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Tu correo electrónico"
+                        required>
+
+
+                    <textarea
+                        name="mensaje"
+                        placeholder="Escribe aquí tu mensaje..."
+                        required>
+                    </textarea>
+
+
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="Nuevo mensaje desde mi Portafolio Profesional">
+
+
+                    <input
+                        type="hidden"
+                        name="_captcha"
+                        value="false">
+
+
+                    <input
+                        type="hidden"
+                        name="_template"
+                        value="table">
+
+
+                    <button type="submit">
+                        ENVIAR MENSAJE
+                    </button>
+
+
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MODAL
+    ===================================================== -->
+
+    <div id="modal"
+         class="modal"
+         onclick="cerrarModal()">
+
+
+        <div class="modal-contenido"
+             onclick="event.stopPropagation()">
+
+
+            <button
+                class="cerrar-modal"
+                onclick="cerrarModal()">
+
+                ×
+
+            </button>
+
+
+            <img
+                id="imagenModal"
+                src=""
+                alt="Vista ampliada del proyecto">
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         PIE DE PÁGINA
+    ===================================================== -->
+
+    <footer>
+
+        © 2026 Zeidy Nicol Sánchez Portillo
+        · Portafolio Profesional
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ===================================================== -->
+
+    <script>
+
+
+        /* =====================================================
+           ABRIR IMAGEN DE PROYECTO
+        ===================================================== */
+
+        function abrirImagen(ruta) {
+
+            const modal =
+                document.getElementById("modal");
+
+            const imagen =
+                document.getElementById("imagenModal");
+
+            imagen.src = ruta;
+
+            modal.classList.add("activo");
+
+            document.body.style.overflow = "hidden";
+        }
+
+
+
+        /* =====================================================
+           CERRAR MODAL
+        ===================================================== */
+
+        function cerrarModal() {
+
+            const modal =
+                document.getElementById("modal");
+
+            const imagen =
+                document.getElementById("imagenModal");
+
+            modal.classList.remove("activo");
+
+            imagen.src = "";
+
+            document.body.style.overflow = "auto";
+        }
+
+
+
+        /* =====================================================
+           CERRAR CON ESC
+        ===================================================== */
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (event.key === "Escape") {
+
+                    cerrarModal();
+
+                }
+
+            }
+        );
+
+
+
+    </script>
+
+
+</body>
+
+</html>
